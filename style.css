@@ -1,0 +1,100 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    grid-template-rows: auto 1fr;
+}
+
+img{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50% 50%;
+}
+
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background-color: cyan;;
+}
+
+.header{
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    background-color: silver;
+}
+
+.dash, .home, .profile, .messages, .history, 
+.tasks, .community, .setting, .support, .privacy{
+    display:flex;
+    flex-direction:row;
+    justify-self: center;
+    align-items: center;
+    gap:10px;
+}
+
+.content{
+    /* display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #eee;
+    gap:10px; */
+
+    display:flex;
+    gap:10px;
+
+
+}
+
+.cards{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.cards{
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    gap:20px;
+}
+
+.project-card{
+    background-color: white;;
+    /* width:200px;
+    height:300px; */
+    border: 2px solid red;
+
+}
+
+
+.annoucments{
+
+    display:flex;
+    flex-direction:column;
+    background-color: teal;
+}
+
+.trend{
+    display:flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+}
+
+
+.trend-card > div{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    padding:15px;
+    
+}
+
+.card-text{
+
+
+}
