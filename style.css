@@ -2,7 +2,9 @@ html,body{
     margin: 0px;
     padding: 0px;
 }
-
+*{
+    box-sizing: border-box;
+}
 .layout{
     display: grid;
     grid-template-columns: 1fr 4fr ;
@@ -10,8 +12,8 @@ html,body{
 }
 
 img{
-    width: 2rem;
-    height:2rem;
+    width: 1rem;
+    height:1rem;
     border-radius: 50% 50%;
 }
 
@@ -25,7 +27,6 @@ img{
 .header{
     grid-column: 2/-1;
     grid-row: 1/2;
-    background-color: silver;
 }
 
 .dash, .home, .profile, .messages, .history, 
@@ -34,7 +35,7 @@ img{
     flex-direction:row;
     justify-self: center;
     align-items: center;
-    gap:10px;
+    gap:15px;
 }
 
 .content{
@@ -47,6 +48,9 @@ img{
     display:flex;
     gap:10px;
 
+    padding: 1.7rem;
+    background-color: silver;
+    position:relative;
 
 }
 
@@ -58,15 +62,20 @@ img{
 .cards{
     display:grid;
     grid-template-rows: auto auto auto;
+    /* grid-template-rows: repeat(3,40ch); */
     grid-template-columns: auto auto;
     gap:20px;
 }
 
 .project-card{
     background-color: white;;
-    /* width:200px;
-    height:300px; */
+
     border: 2px solid red;
+    padding: 10px;
+    font-size: 0.9rem;
+    display:flex;
+    flex-direction: column;
+    /* width: 40ch; */
 
 }
 
@@ -76,9 +85,23 @@ img{
     display:flex;
     flex-direction:column;
     background-color: teal;
+    padding: 1.2rem;
+}
+
+.annoucments p {
+    font-size: 0.7rem;
+    width: 25ch;
+}
+
+.annoucments h4{
+
+    font-size: 0.7rem;
+
+    
 }
 
 .trend{
+    margin-top: 20px;
     display:flex;
     flex-direction: column;
     background-color: rebeccapurple;
@@ -90,11 +113,107 @@ img{
     flex-direction: row;
     gap:10px;
     align-items: center;
-    padding:15px;
+    padding:5px;
+    padding-left: 20px;
     
+}
+
+.trend-card img{
+    width: 2rem;
+    height: 2rem;
 }
 
 .card-text{
 
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
+}
+
+.card-text p {
+    font-size: 0.7rem;
+}
+
+.dash ~ div{
+    margin-left: 10px;
+
+    font-size: 0.6rem;
+
+
+}
+
+.setting{
+    margin-top: 1.5rem;
+}
+
+
+
+.header{
+    display:grid;   
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+input{
+    border-radius: 25px;
+    border:none;
+    width: 20rem;
+    height: 1rem;
+    margin-top: 1.2rem;
+    background-color: #eee;
+}
+
+input, .main-header{
+    margin-left: 20px;
+}
+
+
+
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+button{
+    width: 5rem;
+    height: 1.4rem;
+    border-radius: 10px;
+    background-color: green;
+    color:white;
+    border: none;
+}
+
+/* .content::before{
+    content: "Your projects";
+    position: absolute;
+
+    top: 0;
+    left: 1.7rem    ;
+    width: 7rem;
+    height: 7rem;
+} */
+
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.annoucments span{
+    font-style:bold;
 }
