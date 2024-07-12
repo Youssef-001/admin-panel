@@ -318,3 +318,21 @@ button{
     height: 3em;
 }
 
+
+
+.project-card{
+    position:relative;
+
+}
+
+.test::before{
+    position: absolute;
+    content : "";
+    width:0.6rem;
+    left:0px;
+    top:0px;
+    background-color: #312e81;
+    border-radius: 4px;
+    height:100%;
+}
+
