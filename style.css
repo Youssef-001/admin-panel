@@ -8,8 +8,9 @@ html,body{
 .layout{
     display: grid;
     grid-template-columns: 1fr 4fr ;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto  1fr;
 }
+
 
 img{
     width: 1.3rem;
@@ -71,7 +72,6 @@ img{
 .cards{
     display:grid;
     grid-template-rows: auto auto auto;
-    /* grid-template-rows: repeat(3,40ch); */
     grid-template-columns: auto auto;
     gap:20px;
 }
@@ -94,6 +94,7 @@ img{
 .project-card span {
     font-size: 1.2em;;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .project-card .text{
@@ -111,7 +112,8 @@ img{
 .annoucments p {
     font-size: 0.9em;
     width: 35ch;
-    color: #1e1b4b
+    color: #1e1b4b;
+    font-family: sans-serif;
 }
 
 .annoucments h4{
@@ -141,6 +143,7 @@ img{
     align-items: center;
     padding:5px;
     padding-left: 20px;
+    margin-top: 0.7em;
     
 }
 
@@ -159,13 +162,20 @@ align-items: center;
 }
 
 .card-text p {
-    font-size: 0.7rem;
+    font-size: 0.9em;
+    color: #1e1b4b;
+    font-family: sans-serif;
+}
+
+.card-text span {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .dash ~ div{
     margin-left: 10px;
 
-    font-size: 0.6rem;
+    font-size: 0.9rem;
 
 
 }
@@ -189,12 +199,30 @@ input{
     height: 1rem;
     margin-top: 1.2rem;
     background-color: #eee;
-    padding: 13px;
+    padding: 16px;
     font-size: 1.2rem;
 }
 
 input, .main-header{
     margin-left: 3rem;
+}
+
+.search{
+    position: relative;
+    margin-left: 2em;
+
+}
+
+
+.search::after{
+    content : "🔎";
+    position: absolute;
+    color: black;
+
+left:1rem;
+top: 1.2rem;
+
+
 }
 
 
@@ -284,3 +312,9 @@ button{
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.trend-card img {
+    width: 3em;
+    height: 3em;
+}
+
